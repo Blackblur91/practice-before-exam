@@ -2,9 +2,8 @@ document.querySelector("#root").insertAdjacentHTML("beforeend", `
 <form>
   <h1>Ez egy teszt felület vizsgához</h1>
 
-  <input type="text">
 
-  <textarea name="" id="" cols="30" rows="10">Ide kell írni az összes szöveget</textarea>
+  <textarea placeholder="Ide kell írni az összes szöveget" cols="40" rows="5"></textarea>
 
   <button>KATT IDE</button>
 

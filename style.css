@@ -16,7 +16,7 @@ body {
 form {
   max-width: fit-content;
   max-height: fit-content;
-  background-color: blueviolet;
+  background-color: rgb(164, 115, 210);
 
   display: flex;
   flex-direction: column;
@@ -34,5 +34,85 @@ h1 {
   text-align: center;
   color: black;
   padding: 20px;
+}
 
+input, textarea {
+  padding: 20px;
+  border: 0;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+button {
+  width: 200px;
+
+  background-color: rgb(186, 186, 186);
+  color: rgb(255, 255, 255);
+
+  letter-spacing: 0.2em;
+  font-size: 24px;
+
+  padding: 10px;
+  text-transform: uppercase;
+
+  border: 0;
+
+  margin: 0 auto;
+}
+
+::placeholder {
+  color: rgb(77, 114, 77);
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: rgb(0, 0, 0);
+}
+
+form div input {
+  width: 20px;
+  height: 20px;
+}
+
+#root > div {
+  width: 120px;
+  height: 120px;
+
+  background-color: rgb(77, 114, 77);
+  color: rgb(244, 225, 203);
+
+  font-size: 48px;
+  font-family: 'Raleway', sans-serif;
+
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+input[type="checkbox"] {
+  outline: 1px solid black;
+}
+
+#root > div:hover, button:hover {
+  cursor: pointer;
+  background-color: rgb(171, 91, 172);
 }

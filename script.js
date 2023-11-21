@@ -1,4 +1,4 @@
-document.querySelector("root").insertAdjacentHTML("beforeend", `
+document.querySelector("#root").insertAdjacentHTML("beforeend", `
 <form>
   <h1>Ez egy teszt felület vizsgához</h1>
 
